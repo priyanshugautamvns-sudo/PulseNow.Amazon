@@ -1,0 +1,18 @@
+[
+  { "id": "fruits-veg", "label": "Fruits & Vegetables", "icon": "🥦", "eta": "10 min", "badge": "Fast selling" },
+  { "id": "dairy-bread", "label": "Dairy, Bread & Eggs", "icon": "🥚", "eta": "8 min", "badge": "AI picks ready" },
+  { "id": "snacks-drinks", "label": "Snacks & Drinks", "icon": "🥤", "eta": "8 min", "badge": "Top rated" },
+  { "id": "breakfast-instant", "label": "Breakfast & Instant", "icon": "🥣", "eta": "9 min", "badge": "AI picks ready" },
+  { "id": "baby-care", "label": "Baby Care", "icon": "🍼", "eta": "12 min" },
+  { "id": "cleaning", "label": "Cleaning Essentials", "icon": "🧽", "eta": "11 min" },
+  { "id": "personal-care", "label": "Personal Care", "icon": "🪥", "eta": "10 min" },
+  { "id": "pooja", "label": "Pooja & Festival", "icon": "🪔", "eta": "14 min" },
+  { "id": "pet-care", "label": "Pet Care", "icon": "🐾", "eta": "16 min" },
+  { "id": "electronics", "label": "Electronics", "icon": "🔌", "eta": "20 min" },
+  { "id": "wellness", "label": "Health & Wellness", "icon": "💊", "eta": "10 min", "badge": "Caution applied" },
+  { "id": "hostel", "label": "Hostel Essentials", "icon": "🎒", "eta": "12 min" },
+  { "id": "home", "label": "Home Essentials", "icon": "🏠", "eta": "14 min" },
+  { "id": "vegan", "label": "Vegan Store", "icon": "🌱", "eta": "12 min", "badge": "100% vegan" },
+  { "id": "fitness", "label": "Protein & Fitness", "icon": "💪", "eta": "12 min" },
+  { "id": "rainy", "label": "Rainy Day", "icon": "☔", "eta": "14 min" }
+]

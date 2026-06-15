@@ -1,0 +1,43 @@
+{
+  "id": "u_priya_sharma",
+  "name": "Priya Sharma",
+  "phone": "+91 98xxxx2345",
+  "city": "Bengaluru",
+  "address": {
+    "label": "Home",
+    "line": "Flat 402, Brigade Cosmopolis, Whitefield",
+    "pincode": "560066",
+    "lat": 12.9698,
+    "lng": 77.7499
+  },
+  "household": {
+    "members": 3,
+    "has_baby": true,
+    "baby_age_months": 14,
+    "has_pet": false,
+    "has_elderly": false,
+    "household_type": "young-family"
+  },
+  "preferences": {
+    "preferred_brands": ["Amul", "Britannia", "Pampers", "Tata Sampann", "Yogabar"],
+    "dietary": ["vegetarian"],
+    "lifestyle_tags": ["high-protein", "low-sugar"],
+    "trust_priority": "high",
+    "speed_priority": "high",
+    "budget_priority": "balanced",
+    "sustainability_preference": "medium"
+  },
+  "memberships": {
+    "prime": true,
+    "subscribe_save": ["p_milk_amul_1l", "p_curd_amul_400"]
+  },
+  "payment": {
+    "default_method": "amazon_pay_upi",
+    "amazon_pay_balance": 1245.50,
+    "linked_upi": "priya@apl",
+    "biometric_enabled": true
+  },
+  "predictions_enabled": true,
+  "last_active_dark_store": "ds_whitefield_01",
+  "preferred_eta_max_minutes": 15
+}

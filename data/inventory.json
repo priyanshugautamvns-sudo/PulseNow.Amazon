@@ -1,0 +1,33 @@
+{
+  "dark_stores": [
+    {
+      "id": "ds_whitefield_01",
+      "name": "Amazon Now Dark Store - Whitefield",
+      "city": "Bengaluru",
+      "lat": 12.9716,
+      "lng": 77.7406,
+      "service_radius_km": 4,
+      "average_pick_pack_minutes": 4,
+      "active": true
+    },
+    {
+      "id": "ds_marathahalli_02",
+      "name": "Amazon Now Dark Store - Marathahalli",
+      "city": "Bengaluru",
+      "lat": 12.956,
+      "lng": 77.701,
+      "service_radius_km": 5,
+      "average_pick_pack_minutes": 5,
+      "active": true
+    }
+  ],
+  "stock_overrides": {
+    "ds_whitefield_01": {
+      "p_ice_cubes_2kg": 8,
+      "p_pooja_flowers": 22,
+      "p_milk_a2_1l": 6,
+      "p_chicken_500g": 12,
+      "p_tampon_tampax": 9
+    }
+  }
+}

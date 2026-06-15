@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sch_demo_milk",
+    "userId": "u_priya",
+    "productIds": ["p_milk_amul_1l"],
+    "quantities": { "p_milk_amul_1l": 2 },
+    "frequencyType": "alternate",
+    "intervalDays": 2,
+    "daysOfWeek": [],
+    "time": "17:00",
+    "startDate": "2026-06-15",
+    "endDate": null,
+    "nextRunAt": "2026-06-15T17:00:00+05:30",
+    "addressLabel": "Home",
+    "paymentMethod": "amazon_pay_upi",
+    "status": "active",
+    "confirmBeforeOrder": true,
+    "substitutePolicy": "ask",
+    "label": "Amul milk · alternate days · 5 PM",
+    "createdAt": "2026-06-13T10:00:00+05:30"
+  }
+]

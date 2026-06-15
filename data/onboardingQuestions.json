@@ -1,0 +1,132 @@
+{
+  "dietary": {
+    "title": "How do you eat?",
+    "subtitle": "Pick anything that applies. We will only show food that fits.",
+    "multi": true,
+    "options": [
+      { "value": "vegetarian", "label": "Vegetarian", "icon": "🥗" },
+      { "value": "non-vegetarian", "label": "Non-vegetarian", "icon": "🍗" },
+      { "value": "vegan", "label": "Vegan", "icon": "🌱" },
+      { "value": "eggetarian", "label": "Eggetarian", "icon": "🥚" },
+      { "value": "jain", "label": "Jain", "icon": "🪷" },
+      { "value": "no-onion-garlic", "label": "No onion / garlic", "icon": "🧄" },
+      { "value": "high-protein", "label": "High protein", "icon": "💪" },
+      { "value": "low-sugar", "label": "Low sugar", "icon": "🩺" },
+      { "value": "organic", "label": "Organic preference", "icon": "🌾" },
+      { "value": "gluten-free", "label": "Gluten-free", "icon": "🌽" }
+    ]
+  },
+  "healthCautions": {
+    "title": "Any dietary or health restrictions?",
+    "subtitle": "Optional. We use these only to filter products and show care notes — never as medical advice.",
+    "multi": true,
+    "options": [
+      { "value": "diabetes", "label": "Diabetes / sugar control", "icon": "🩸" },
+      { "value": "high-bp", "label": "High blood pressure", "icon": "💗" },
+      { "value": "lactose-intolerant", "label": "Lactose intolerant", "icon": "🥛" },
+      { "value": "nut-allergy", "label": "Nut allergy", "icon": "🥜" },
+      { "value": "gluten-sensitive", "label": "Gluten sensitive", "icon": "🌾" },
+      { "value": "low-sodium", "label": "Low sodium", "icon": "🧂" },
+      { "value": "no-spicy", "label": "No spicy food", "icon": "🌶️" },
+      { "value": "avoid-caffeine", "label": "Avoid caffeine", "icon": "☕" },
+      { "value": "pregnancy-safe", "label": "Pregnancy-safe", "icon": "🤰" },
+      { "value": "baby-safe", "label": "Baby-safe products", "icon": "🍼" },
+      { "value": "elderly-friendly", "label": "Elderly-friendly", "icon": "👵" },
+      { "value": "none", "label": "None", "icon": "✅" },
+      { "value": "prefer-not-to-say", "label": "Prefer not to say", "icon": "🤐" }
+    ]
+  },
+  "interests": {
+    "title": "What do you usually shop for?",
+    "subtitle": "Pick 3 or more. We'll prioritise these on your home feed.",
+    "multi": true,
+    "options": [
+      { "value": "food-snacks", "label": "Food & snacks", "icon": "🍿" },
+      { "value": "groceries", "label": "Groceries", "icon": "🛒" },
+      { "value": "vegan", "label": "Vegan products", "icon": "🌱" },
+      { "value": "fitness-protein", "label": "Fitness & protein", "icon": "💪" },
+      { "value": "baby-care", "label": "Baby care", "icon": "🍼" },
+      { "value": "cleaning", "label": "Cleaning essentials", "icon": "🧽" },
+      { "value": "beauty", "label": "Beauty / skincare", "icon": "💄" },
+      { "value": "personal-care", "label": "Personal care", "icon": "🪥" },
+      { "value": "pooja", "label": "Pooja / festival", "icon": "🪔" },
+      { "value": "hostel", "label": "Hostel essentials", "icon": "🎒" },
+      { "value": "pet-care", "label": "Pet care", "icon": "🐾" },
+      { "value": "electronics", "label": "Electronics", "icon": "🔌" },
+      { "value": "home", "label": "Home essentials", "icon": "🏠" },
+      { "value": "breakfast", "label": "Healthy breakfast", "icon": "🥣" },
+      { "value": "quick-cooking", "label": "Quick cooking", "icon": "🍳" }
+    ]
+  },
+  "brands": {
+    "title": "Pick brands you trust",
+    "subtitle": "We'll prioritise these when they're in stock. Skip any you don't care about.",
+    "multi": true,
+    "categories": [
+      {
+        "id": "milk_dairy",
+        "label": "Milk & dairy",
+        "options": ["Amul", "Mother Dairy", "Nandini", "Local trusted brand", "No preference"]
+      },
+      {
+        "id": "snacks",
+        "label": "Snacks",
+        "options": ["Lay's", "Haldiram's", "Too Yumm", "Yogabar", "Open Secret", "No preference"]
+      },
+      {
+        "id": "cleaning",
+        "label": "Cleaning",
+        "options": ["Surf Excel", "Ariel", "Harpic", "Lizol", "Vim", "No preference"]
+      },
+      {
+        "id": "baby_care",
+        "label": "Baby care",
+        "options": ["Pampers", "Huggies", "Himalaya", "Johnson's", "Mamaearth", "No preference"]
+      },
+      {
+        "id": "skincare",
+        "label": "Skincare & personal care",
+        "options": ["Nivea", "Dove", "Plum", "Mamaearth", "Minimalist", "No preference"]
+      }
+    ],
+    "metaOptions": [
+      { "value": "fastest", "label": "Prefer fastest delivery", "icon": "⚡" },
+      { "value": "cheapest", "label": "Prefer cheapest", "icon": "🏷️" },
+      { "value": "trusted", "label": "Prefer trusted / high rated", "icon": "🛡️" },
+      { "value": "eco", "label": "Prefer eco-friendly", "icon": "🌿" },
+      { "value": "private-label", "label": "Amazon private label when better value", "icon": "📦" }
+    ]
+  },
+  "shoppingStyle": {
+    "title": "How do you like to shop?",
+    "subtitle": "Pick 1 or 2 styles that feel like you.",
+    "multi": true,
+    "options": [
+      { "value": "fastest-delivery", "label": "I want fastest delivery", "icon": "⚡" },
+      { "value": "best-quality", "label": "I want best quality", "icon": "🏅" },
+      { "value": "lowest-price", "label": "I want lowest price", "icon": "🏷️" },
+      { "value": "reorder-same-brand", "label": "I usually reorder same brand", "icon": "🔁" },
+      { "value": "try-new-brands", "label": "I like trying new brands", "icon": "✨" },
+      { "value": "safe-trusted", "label": "I prefer safe & trusted", "icon": "🛡️" },
+      { "value": "bundles", "label": "I like combo bundles", "icon": "🛍️" }
+    ]
+  },
+  "household": {
+    "title": "Tell us about your household",
+    "subtitle": "Optional. Helps Pulse plan ahead — guests, baby, fitness, daily pooja, etc.",
+    "multi": true,
+    "options": [
+      { "value": "living-alone", "label": "Living alone", "icon": "🧍" },
+      { "value": "family", "label": "Family", "icon": "👨‍👩‍👧" },
+      { "value": "hostel", "label": "Hostel / PG", "icon": "🎒" },
+      { "value": "new-parent", "label": "New parent", "icon": "👶" },
+      { "value": "has-baby", "label": "Has a baby", "icon": "🍼" },
+      { "value": "has-elderly", "label": "Has elderly", "icon": "👵" },
+      { "value": "has-pet", "label": "Has a pet", "icon": "🐾" },
+      { "value": "hosts-guests", "label": "Hosts guests often", "icon": "🎉" },
+      { "value": "weekly-cleaning", "label": "Weekly cleaning", "icon": "🧽" },
+      { "value": "daily-pooja", "label": "Daily pooja", "icon": "🪔" },
+      { "value": "fitness-focused", "label": "Fitness focused", "icon": "💪" }
+    ]
+  }
+}

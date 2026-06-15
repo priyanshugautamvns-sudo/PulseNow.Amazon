@@ -1,0 +1,30 @@
+[
+  {
+    "id": "vn_priya_hinglish",
+    "label": "Priya · Hinglish",
+    "duration_sec": 6,
+    "language": "hinglish",
+    "transcript": "Doodh, bread, eggs aur Lay's chips order kar dena. Aur thoda dahi bhi le lena."
+  },
+  {
+    "id": "vn_mom_hindi",
+    "label": "Mom · Hindi (Devanagari)",
+    "duration_sec": 5,
+    "language": "hindi",
+    "transcript": "मुझे आज पोहा बनाना है, सारी सामग्री मँगा देना। और थोड़ा अदरक-लहसुन का पेस्ट भी।"
+  },
+  {
+    "id": "vn_friend_english",
+    "label": "Friend · English",
+    "duration_sec": 7,
+    "language": "english",
+    "transcript": "Hey, can you order Lays chips, two bottles of Coke, Oreos, and some paper cups for tonight? Around six people."
+  },
+  {
+    "id": "vn_husband_emergency",
+    "label": "Spouse · Hinglish (period care)",
+    "duration_sec": 5,
+    "language": "hinglish",
+    "transcript": "Whisper pads aur dark chocolate jaldi mangwa do, plus Meftal Spas if available."
+  }
+]

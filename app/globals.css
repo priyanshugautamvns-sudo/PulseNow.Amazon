@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* -----------------------------------------------------------------
+ * Theme tokens — light is the default. Dark applied via
+ * <html data-theme="dark">. All Tailwind colors below resolve to
+ * these tokens, so the same component class works in both themes.
+ * ---------------------------------------------------------------*/
+:root,
+:root[data-theme="light"] {
+  --bg-canvas: 250 250 250;        /* #FAFAFA */
+  --bg-surface: 255 255 255;       /* #FFFFFF */
+  --bg-elevated: 255 255 255;
+  --bg-muted: 244 245 247;         /* #F4F5F7 */
+  --border-line: 229 231 235;      /* #E5E7EB */
+  --border-hairline: 239 239 239;
+
+  --text-strong: 0 0 0;
+  --text-primary: 15 17 17;        /* #0F1111 — Amazon text */
+  --text-secondary: 86 89 89;      /* #565959 */
+  --text-tertiary: 107 114 128;    /* #6B7280 */
+  --text-muted: 154 160 166;       /* #9AA0A6 */
+  --text-subtle: 199 205 211;      /* #C7CDD3 */
+
+  --brand-orange: 255 153 0;       /* Amazon orange #FF9900 */
+  --brand-amber: 224 114 26;       /* deeper amber for contrast on light */
+  --brand-gold: 245 158 11;
+  --brand-deep: 192 90 0;
+  --brand-navy: 35 47 62;          /* #232F3E */
+  --brand-glow: 255 153 0;
+
+  --good: 6 125 98;                /* #067D62 */
+  --warn: 240 136 4;
+  --bad: 177 39 4;                 /* #B12704 */
+  --info: 20 110 180;              /* #146EB4 */
+  --shadow: 15 23 42;              /* slate */
+
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg-canvas: 7 9 15;             /* #07090F */
+  --bg-surface: 15 20 28;          /* #0F141C */
+  --bg-elevated: 21 27 38;         /* #151B26 */
+  --bg-muted: 26 34 48;             /* #1A2230 */
+  --border-line: 34 43 59;
+  --border-hairline: 42 52 74;
+
+  --text-strong: 255 255 255;
+  --text-primary: 229 233 240;     /* #E5E9F0 */
+  --text-secondary: 154 164 184;   /* #9AA4B8 */
+  --text-tertiary: 124 135 157;
+  --text-muted: 94 106 130;
+  --text-subtle: 71 81 100;
+
+  --brand-orange: 255 157 46;
+  --brand-amber: 255 179 71;
+  --brand-gold: 255 204 102;
+  --brand-deep: 224 114 26;
+  --brand-navy: 11 18 32;
+  --brand-glow: 255 169 77;
+
+  --good: 52 211 153;
+  --warn: 251 191 36;
+  --bad: 248 113 113;
+  --info: 96 165 250;
+  --shadow: 0 0 0;
+
+  color-scheme: dark;
+}
+
+html, body {
+  background: rgb(var(--bg-canvas));
+  color: rgb(var(--text-primary));
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  font-feature-settings: 'cv11', 'ss01';
+}
+
+body {
+  min-height: 100vh;
+}
+
+:root[data-theme="dark"] body {
+  background:
+    radial-gradient(900px 500px at 12% -10%, rgb(var(--brand-orange) / 0.16), transparent 60%),
+    radial-gradient(800px 500px at 105% 10%, rgb(var(--info) / 0.08), transparent 60%),
+    radial-gradient(700px 600px at 50% 120%, rgb(var(--brand-orange) / 0.06), transparent 60%),
+    rgb(var(--bg-canvas));
+  background-attachment: fixed;
+}
+
+:root[data-theme="light"] body {
+  background:
+    radial-gradient(800px 500px at 10% 0%, rgb(var(--brand-orange) / 0.07), transparent 60%),
+    radial-gradient(700px 500px at 100% 10%, rgb(var(--info) / 0.05), transparent 60%),
+    rgb(var(--bg-canvas));
+  background-attachment: fixed;
+}
+
+/* Scrollbars */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb { background: rgb(var(--bg-muted)); border-radius: 8px; }
+*::-webkit-scrollbar-track { background: transparent; }
+
+@layer components {
+  .surface {
+    @apply bg-surface border border-line rounded-2xl;
+  }
+  .surface-soft {
+    @apply bg-muted border border-line rounded-xl;
+  }
+  .card {
+    @apply bg-surface border border-line rounded-2xl shadow-e1;
+  }
+  .card-glow {
+    @apply bg-surface border border-line rounded-2xl shadow-e1 hover:shadow-glow transition;
+  }
+  .glass {
+    background: rgb(var(--bg-surface) / 0.85);
+    border: 1px solid rgb(var(--border-line));
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 16px;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3
+           font-semibold text-white
+           bg-gradient-to-b from-brand-amber to-brand-deep
+           shadow-cta active:scale-[0.99] transition;
+  }
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3
+           font-semibold text-ink-100 bg-elevated border border-line
+           hover:border-brand-orange/40 hover:bg-muted active:scale-[0.99] transition;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5
+           font-medium text-ink-100 bg-transparent border border-line hover:bg-muted transition;
+  }
+  .btn-link {
+    @apply text-brand-amber hover:underline font-medium;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium;
+  }
+  .pill-soft {
+    @apply pill bg-muted text-ink-200 border border-line;
+  }
+  .pill-orange {
+    @apply pill bg-brand-orange/10 text-brand-amber border border-brand-orange/30;
+  }
+  .pill-good {
+    @apply pill bg-good/10 text-good border border-good/25;
+  }
+  .pill-bad {
+    @apply pill bg-bad/10 text-bad border border-bad/25;
+  }
+  .pill-info {
+    @apply pill bg-info/10 text-info border border-info/25;
+  }
+  .pill-warn {
+    @apply pill bg-warn/10 text-warn border border-warn/25;
+  }
+
+  .h-eyebrow {
+    @apply text-[11px] uppercase tracking-[0.14em] text-ink-300 font-semibold;
+  }
+  .h-title {
+    @apply text-[22px] md:text-[26px] font-semibold text-ink-100 tracking-tight;
+  }
+  .gradient-text {
+    background: linear-gradient(90deg, rgb(var(--brand-amber)), rgb(var(--brand-orange)), rgb(var(--brand-gold)));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 5s linear infinite;
+  }
+  .skeleton {
+    background: linear-gradient(90deg, rgb(var(--bg-muted)) 0%, rgb(var(--bg-elevated)) 50%, rgb(var(--bg-muted)) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s linear infinite;
+    border-radius: 10px;
+  }
+  .divider {
+    background: linear-gradient(90deg, transparent, rgb(var(--border-line)), transparent);
+    height: 1px;
+  }
+}
+
+/* Helper to keep the orange button text dark on light theme,
+ * white text on dark theme — already handled by btn-primary using
+ * gradient + white text. But pure orange backgrounds need a fix. */
+.text-on-orange {
+  color: white;
+}
+:root[data-theme="light"] .text-on-orange {
+  color: rgb(var(--text-primary));
+}
+
+@keyframes scanLine {
+  0% { transform: translateY(-100%); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(120%); opacity: 0; }
+}
+.scan-line { animation: scanLine 1.4s ease-in-out infinite; }
+
+@keyframes voiceWave {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1); }
+}
+.voice-bar { animation: voiceWave 1s ease-in-out infinite; }
+
+:where(button, a, input, textarea, select):focus-visible {
+  outline: 2px solid rgb(var(--brand-orange));
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.phone-frame {
+  border-radius: 38px;
+  background: rgb(var(--bg-elevated));
+  padding: 10px;
+  border: 1px solid rgb(var(--border-line));
+  box-shadow: 0 30px 60px -15px rgb(var(--shadow) / 0.4);
+}
+.phone-screen {
+  border-radius: 28px;
+  overflow: hidden;
+  background: rgb(var(--bg-canvas));
+  height: 100%;
+}

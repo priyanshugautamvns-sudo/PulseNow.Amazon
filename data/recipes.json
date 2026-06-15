@@ -1,0 +1,99 @@
+[
+  {
+    "id": "r_poha",
+    "names": ["poha", "pohe", "kanda poha", "flattened rice"],
+    "label": "Poha for breakfast",
+    "icon": "🍚",
+    "serves_default": 2,
+    "intent_hint": "Build a breakfast poha kit",
+    "ingredients": [
+      { "product_id": "p_poha_500", "qty": 1, "note": "flattened rice" },
+      { "product_id": "p_onion_1kg", "qty": 1, "note": "1 medium" },
+      { "product_id": "p_potato_1kg", "qty": 1, "note": "optional" },
+      { "product_id": "p_green_chilli_100", "qty": 1 },
+      { "product_id": "p_lemon_4", "qty": 1 },
+      { "product_id": "p_coriander_bunch", "qty": 1 },
+      { "product_id": "p_mustard_seeds_100", "qty": 1 },
+      { "product_id": "p_curry_leaves_50", "qty": 1 },
+      { "product_id": "p_peanuts_500g", "qty": 1 },
+      { "product_id": "p_turmeric_100", "qty": 1 },
+      { "product_id": "p_oil_fortune", "qty": 1 }
+    ]
+  },
+  {
+    "id": "r_biryani_chicken",
+    "names": ["chicken biryani", "biryani", "biriyani"],
+    "label": "Chicken biryani for 4",
+    "icon": "🍛",
+    "serves_default": 4,
+    "intent_hint": "Build a chicken biryani kit",
+    "ingredients": [
+      { "product_id": "p_rice_basmati_1kg", "qty": 1 },
+      { "product_id": "p_chicken_500g", "qty": 1 },
+      { "product_id": "p_yogurt_amul_400", "qty": 1 },
+      { "product_id": "p_onion_1kg", "qty": 1 },
+      { "product_id": "p_tomato_500g", "qty": 1 },
+      { "product_id": "p_ginger_garlic_paste", "qty": 1 },
+      { "product_id": "p_biryani_masala", "qty": 1 },
+      { "product_id": "p_garam_masala", "qty": 1 },
+      { "product_id": "p_mint_bunch", "qty": 1 },
+      { "product_id": "p_coriander_bunch", "qty": 1 },
+      { "product_id": "p_ghee_amul_500", "qty": 1 },
+      { "product_id": "p_lemon_4", "qty": 1 },
+      { "product_id": "p_oil_fortune", "qty": 1 }
+    ]
+  },
+  {
+    "id": "r_biryani_veg",
+    "names": ["veg biryani", "vegetable biryani"],
+    "label": "Veg biryani for 4",
+    "icon": "🍛",
+    "serves_default": 4,
+    "intent_hint": "Build a veg biryani kit",
+    "ingredients": [
+      { "product_id": "p_rice_basmati_1kg", "qty": 1 },
+      { "product_id": "p_paneer_amul_200", "qty": 1 },
+      { "product_id": "p_yogurt_amul_400", "qty": 1 },
+      { "product_id": "p_onion_1kg", "qty": 1 },
+      { "product_id": "p_tomato_500g", "qty": 1 },
+      { "product_id": "p_ginger_garlic_paste", "qty": 1 },
+      { "product_id": "p_biryani_masala", "qty": 1 },
+      { "product_id": "p_garam_masala", "qty": 1 },
+      { "product_id": "p_mint_bunch", "qty": 1 },
+      { "product_id": "p_coriander_bunch", "qty": 1 },
+      { "product_id": "p_ghee_amul_500", "qty": 1 }
+    ]
+  },
+  {
+    "id": "r_dal_chawal",
+    "names": ["dal chawal", "dal rice", "everyday meal"],
+    "label": "Dal chawal kit",
+    "icon": "🍲",
+    "serves_default": 2,
+    "intent_hint": "Build a dal chawal kit",
+    "ingredients": [
+      { "product_id": "p_dal_toor_1kg", "qty": 1 },
+      { "product_id": "p_rice_basmati_1kg", "qty": 1 },
+      { "product_id": "p_onion_1kg", "qty": 1 },
+      { "product_id": "p_tomato_500g", "qty": 1 },
+      { "product_id": "p_turmeric_100", "qty": 1 },
+      { "product_id": "p_ghee_amul_500", "qty": 1 }
+    ]
+  },
+  {
+    "id": "r_omelette",
+    "names": ["omelette", "egg breakfast", "omelet"],
+    "label": "Omelette breakfast",
+    "icon": "🍳",
+    "serves_default": 2,
+    "intent_hint": "Build an omelette breakfast kit",
+    "ingredients": [
+      { "product_id": "p_eggs_brown_6", "qty": 1 },
+      { "product_id": "p_onion_1kg", "qty": 1 },
+      { "product_id": "p_tomato_500g", "qty": 1 },
+      { "product_id": "p_green_chilli_100", "qty": 1 },
+      { "product_id": "p_bread_brown", "qty": 1 },
+      { "product_id": "p_oil_fortune", "qty": 1 }
+    ]
+  }
+]

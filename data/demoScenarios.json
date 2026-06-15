@@ -1,0 +1,220 @@
+[
+  {
+    "id": "guests_arriving",
+    "label": "Guests arriving",
+    "icon": "🎉",
+    "input": "Guests are coming in 20 minutes",
+    "intent_type": "emergency",
+    "category": "guest_kit",
+    "story": "Old: 5 minutes & 8 taps. New: 7 seconds & 1 hold.",
+    "before_minutes": 5,
+    "after_seconds": 7,
+    "scaling": "per_guest",
+    "tier_items": {
+      "fastest": [
+        { "id": "p_chips_lays_classic", "per_guest": 1 },
+        { "id": "p_drink_coke_750", "per_guest_div": 2 },
+        { "id": "p_cookies_oreo", "per_guest_div": 2 },
+        { "id": "p_tissue_origami", "qty": 1 }
+      ],
+      "premium": [
+        { "id": "p_chips_haldiram_namkeen", "per_guest_div": 2 },
+        { "id": "p_drink_tropicana", "per_guest_div": 4 },
+        { "id": "p_cookies_oreo", "per_guest_div": 2 },
+        { "id": "p_cups_disposable_50", "qty": 1 },
+        { "id": "p_ice_cubes_2kg", "qty": 1 },
+        { "id": "p_freshener_pass", "qty": 1 }
+      ],
+      "budget": [
+        { "id": "p_chips_lays_classic", "per_guest_div": 2 },
+        { "id": "p_drink_thumsup", "per_guest_div": 4 },
+        { "id": "p_tissue_origami", "qty": 1 }
+      ]
+    }
+  },
+  {
+    "id": "period_care",
+    "label": "Period care",
+    "icon": "🌸",
+    "input": "I'm getting my period, need supplies",
+    "intent_type": "emergency",
+    "category": "period",
+    "story": "From cramps to comfort. Discreet, fast, trusted.",
+    "before_minutes": 30,
+    "after_seconds": 8,
+    "tier_items": {
+      "fastest": [
+        { "id": "p_pad_whisper_xl", "qty": 1 },
+        { "id": "p_meftal_spas", "qty": 1 },
+        { "id": "p_dark_chocolate", "qty": 1 }
+      ],
+      "premium": [
+        { "id": "p_pad_whisper_xl", "qty": 1 },
+        { "id": "p_tampon_tampax", "qty": 1 },
+        { "id": "p_hot_water_bag", "qty": 1 },
+        { "id": "p_intimate_wash", "qty": 1 },
+        { "id": "p_dark_chocolate", "qty": 1 },
+        { "id": "p_meftal_spas", "qty": 1 }
+      ],
+      "budget": [
+        { "id": "p_pad_stayfree_xl", "qty": 1 },
+        { "id": "p_paracetamol_dolo", "qty": 1 }
+      ]
+    },
+    "requires_caution": true
+  },
+  {
+    "id": "fever",
+    "label": "Fever care",
+    "icon": "🌡️",
+    "input": "fever care kit",
+    "intent_type": "emergency",
+    "category": "wellness",
+    "story": "ORS + thermometer + Dolo before the chemist closes.",
+    "before_minutes": 25,
+    "after_seconds": 9,
+    "tier_items": {
+      "fastest": [
+        { "id": "p_paracetamol_dolo", "qty": 1 },
+        { "id": "p_ors_electral", "qty": 1 }
+      ],
+      "premium": [
+        { "id": "p_paracetamol_dolo", "qty": 1 },
+        { "id": "p_ors_electral", "qty": 1 },
+        { "id": "p_thermometer_digital", "qty": 1 },
+        { "id": "p_sanitizer_dettol", "qty": 1 }
+      ],
+      "budget": [
+        { "id": "p_paracetamol_dolo", "qty": 1 }
+      ]
+    },
+    "requires_caution": true
+  },
+  {
+    "id": "pooja",
+    "label": "Pooja items",
+    "icon": "🪔",
+    "input": "Pooja items for tomorrow morning",
+    "intent_type": "emergency",
+    "category": "pooja",
+    "story": "Old: visit local market. New: 4 pooja essentials in 18 minutes.",
+    "before_minutes": 30,
+    "after_seconds": 8,
+    "tier_items": {
+      "fastest": [
+        { "id": "p_pooja_agarbatti", "qty": 1 },
+        { "id": "p_pooja_camphor", "qty": 1 },
+        { "id": "p_pooja_kumkum", "qty": 1 }
+      ],
+      "premium": [
+        { "id": "p_pooja_diya_pack", "qty": 1 },
+        { "id": "p_pooja_agarbatti", "qty": 1 },
+        { "id": "p_pooja_camphor", "qty": 1 },
+        { "id": "p_pooja_kumkum", "qty": 1 },
+        { "id": "p_pooja_flowers", "qty": 2 },
+        { "id": "p_ghee_amul_500", "qty": 1 }
+      ],
+      "budget": [
+        { "id": "p_pooja_agarbatti", "qty": 1 },
+        { "id": "p_pooja_kumkum", "qty": 1 }
+      ]
+    }
+  },
+  {
+    "id": "rainy_day",
+    "label": "Rainy day kit",
+    "icon": "☔",
+    "input": "Rainy day essentials",
+    "intent_type": "emergency",
+    "category": "rainy",
+    "story": "Umbrella + hot Maggi + sev for the chai.",
+    "before_minutes": 10,
+    "after_seconds": 6,
+    "tier_items": {
+      "fastest": [
+        { "id": "p_maggi_12pack", "qty": 1 },
+        { "id": "p_chips_haldiram_namkeen", "qty": 1 }
+      ],
+      "premium": [
+        { "id": "p_umbrella", "qty": 1 },
+        { "id": "p_maggi_12pack", "qty": 1 },
+        { "id": "p_chips_haldiram_namkeen", "qty": 1 },
+        { "id": "p_dark_chocolate", "qty": 1 }
+      ],
+      "budget": [
+        { "id": "p_maggi_12pack", "qty": 1 }
+      ]
+    }
+  },
+  {
+    "id": "power_cut",
+    "label": "Power cut",
+    "icon": "🔌",
+    "input": "Power cut essentials",
+    "intent_type": "emergency",
+    "category": "power_cut",
+    "story": "Lantern + power bank, ready in 22 minutes.",
+    "before_minutes": 20,
+    "after_seconds": 8,
+    "tier_items": {
+      "fastest": [
+        { "id": "p_candle_emergency", "qty": 1 }
+      ],
+      "premium": [
+        { "id": "p_candle_emergency", "qty": 1 },
+        { "id": "p_powerbank_mi", "qty": 1 }
+      ],
+      "budget": [
+        { "id": "p_candle_emergency", "qty": 1 }
+      ]
+    }
+  },
+  {
+    "id": "vegan_snacks",
+    "label": "Vegan snacks",
+    "icon": "🌱",
+    "input": "I need vegan snacks",
+    "intent_type": "guided",
+    "category": "vegan",
+    "story": "Only 100% vegan SKUs. No mislabels.",
+    "before_minutes": 4,
+    "after_seconds": 6,
+    "core_items": ["p_vegan_snack_box", "p_vegan_chips", "p_vegan_milk_oat"]
+  },
+  {
+    "id": "new_parent",
+    "label": "New parent",
+    "icon": "👶",
+    "input": "I'm a new parent",
+    "intent_type": "guided",
+    "category": "baby",
+    "story": "3 questions to a trusted starter kit.",
+    "before_minutes": 12,
+    "after_seconds": 25,
+    "core_items": ["p_diapers_pampers_m", "p_wipes_pampers", "p_baby_lotion_johnsons", "p_baby_detergent_mama", "p_thermometer_digital", "p_sanitizer_dettol"]
+  },
+  {
+    "id": "house_cleaning",
+    "label": "House cleaning",
+    "icon": "🧽",
+    "input": "I'm cleaning my whole house",
+    "intent_type": "guided",
+    "category": "cleaning",
+    "story": "Old: 8 categories. New: one cleaning kit.",
+    "before_minutes": 7,
+    "after_seconds": 9,
+    "core_items": ["p_floor_cleaner_lizol", "p_dish_vim_750", "p_toilet_harpic", "p_glass_cleaner_colin", "p_microfiber_cloth_5"]
+  },
+  {
+    "id": "high_protein",
+    "label": "High-protein breakfast",
+    "icon": "💪",
+    "input": "I want healthy high-protein snacks",
+    "intent_type": "guided",
+    "category": "high-protein",
+    "story": "15g+ protein per serving.",
+    "before_minutes": 5,
+    "after_seconds": 7,
+    "core_items": ["p_breakfast_peanut_butter", "p_breakfast_muesli_yog", "p_vegan_snack_box"]
+  }
+]
